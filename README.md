@@ -2,8 +2,7 @@
 Material relacionado con el curso de Web Developer Beginner impartido para UCenfotec (modalidad virtual) en Marzo 2021.
 
 ### Requerimientos de software
-* Microsoft Visual Studio Code 
-  <br/>https://code.visualstudio.com/
+* Microsoft Visual Studio Code https://code.visualstudio.com/
  <br/>Instalar o actualizar a la última versión.
  <br/>Keyboard shortcuts for Windows: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
  <br/>Keyboard shortcuts for MacOS: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
