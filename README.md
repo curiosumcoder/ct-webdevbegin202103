@@ -5,6 +5,7 @@ Material relacionado con el curso de Web Developer Beginner impartido para UCenf
 * Microsoft Visual Studio Code https://code.visualstudio.com/
  <br/>Instalar o actualizar a la última versión.
  <br/>Agregar la extensión Angular Essentials: https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials, deshabilitar las que indique el profesor.
+ <br/>
  <br/>Keyboard shortcuts for Windows: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
  <br/>Keyboard shortcuts for MacOS: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
 	
