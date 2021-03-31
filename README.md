@@ -5,6 +5,8 @@ Material relacionado con el curso de Web Developer Beginner impartido para UCenf
 * Microsoft Visual Studio Code 
   <br/>https://code.visualstudio.com/
  <br/>Instalar o actualizar a la última versión.
+ <br/>Keyboard shortcuts for Windows: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+ <br/>Keyboard shortcuts for MacOS: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
 	
 * Node.js
  <br/>https://nodejs.org/en/download/.
