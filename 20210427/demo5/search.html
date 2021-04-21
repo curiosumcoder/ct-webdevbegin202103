@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <style>
+         @import url(css/basic.css);
+    </style>
+    <script>
+        window.addEventListener('DOMContentLoaded', function (event) {
+            console.log('DOM is ready!');            
+
+            products.forEach(p => {
+                //console.log(p.productName);
+
+                const tr = document.createElement('tr');
+
+                // Como iterar por todas las propiedades de un objeto
+                // for(const prop in p)
+                // {
+                //     const td = document.createElement('td');
+                //     td.innerText = p[prop];
+                //     tr.appendChild(td);
+                // }
+
+                let td = document.createElement('td');
+                td.innerText = p.productName;
+                tr.appendChild(td);
+
+                td = document.createElement('td');
+                td.innerText = p.unitPrice;
+                tr.appendChild(td);
+
+                td = document.createElement('td');
+                td.innerText = p.quantityPerUnit;
+                tr.appendChild(td);
+
+                td = document.createElement('td');
+                td.innerText = p.categoryName;
+                tr.appendChild(td);
+
+                results.appendChild(tr);
+            });
+        });        
+    </script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="search.html" class="active">Search</a>
+    </nav>
+    <main>
+        <section>
+
+        </section>       
+        <section>
+            <table>
+                <caption>Search results</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Unit Price</th>
+                        <th>Quantity Per Unit</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody id="results">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="js/products.js"></script>
+</body>
+
+</html>
