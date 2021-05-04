@@ -1,4 +1,4 @@
-# webdevbegin202103
+# Web Developer Beginner
 Material relacionado con el curso de Web Developer Beginner impartido para UCenfotec (modalidad virtual) en Marzo 2021.
 
 ### Requerimientos de software
