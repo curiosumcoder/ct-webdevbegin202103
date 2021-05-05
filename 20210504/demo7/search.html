@@ -8,15 +8,20 @@
     <title>Search</title>
     <style>
          @import url(css/basic.css);
+         @import url(css/table.css);
     </style>
     <script>
         window.addEventListener('DOMContentLoaded', function (event) {
-            console.log('DOM is ready!');            
-
-            products.forEach(p => {
+            console.log('DOM is ready!');   
+            
+            // for (const p of products) {                
+            // }
+            
+            /*products.forEach(p => {
                 //console.log(p.productName);
 
-                const tr = document.createElement('tr');
+                // DOM API
+                const tr = document.createElement('tr'); // <tr></tr>
 
                 // Como iterar por todas las propiedades de un objeto
                 // for(const prop in p)
@@ -26,9 +31,9 @@
                 //     tr.appendChild(td);
                 // }
 
-                let td = document.createElement('td');
+                let td = document.createElement('td'); //<td></td>
                 td.innerText = p.productName;
-                tr.appendChild(td);
+                tr.appendChild(td); // <tr><td></td></tr>
 
                 td = document.createElement('td');
                 td.innerText = p.unitPrice;
@@ -43,6 +48,44 @@
                 tr.appendChild(td);
 
                 results.appendChild(tr);
+            });*/
+
+            bSearch.addEventListener('click', event => {
+                event.preventDefault();
+
+                const filter = iFilter.value;
+                console.log(`bSearch clicked! Searching ${filter}...`);
+
+                results.innerHTML = '';
+                
+                products.forEach(p => {
+                    if (p.productName.indexOf(filter) >= 0) {
+                        // console.log(p);
+
+                        const tr = document.createElement('tr');
+
+                        let td = document.createElement('td');
+                        td.innerText = p.productName;
+                        tr.appendChild(td);
+
+                        td = document.createElement('td');
+                        td.innerText = p.unitPrice;
+                        tr.appendChild(td);
+
+                        td = document.createElement('td');
+                        td.innerText = p.quantityPerUnit;
+                        tr.appendChild(td);
+
+                        td = document.createElement('td');
+                        td.innerText = p.categoryName;
+                        tr.appendChild(td);
+
+                        results.appendChild(tr);
+                    }
+                    else {
+                        console.log('Not found!');
+                    }    
+                });
             });
         });        
     </script>
@@ -55,7 +98,11 @@
     </nav>
     <main>
         <section>
-
+            <form>
+                <label for="iFilter">Filter</label>
+                <input id="iFilter" type="search" placeholder="Type yoour filter here ..." />
+                <button id="bSearch">Search</button>
+            </form>
         </section>       
         <section>
             <table>
@@ -73,7 +120,7 @@
                         <th>Category</th>
                     </tr>
                 </thead>
-                <tbody id="results">
+                <tbody id="results">                    
                 </tbody>
             </table>
         </section>
