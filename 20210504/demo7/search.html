@@ -59,7 +59,9 @@
                 results.innerHTML = '';
                 
                 products.forEach(p => {
-                    if (p.productName.indexOf(filter) >= 0) {
+                    // filter != ''
+                    // filter
+                    if (filter != '' && p.productName.indexOf(filter) >= 0) {
                         // console.log(p);
 
                         const tr = document.createElement('tr');
