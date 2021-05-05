@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="calc.js"></script>
+    <style>
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(107, 189, 214);
+        }
+        fieldset {
+            border-radius: 5px;
+        }    
+        #operations
+        {
+            display: grid;
+            grid-template-columns: 5em 5em;
+            gap: 1em;
+        }
+        #operations button {
+            width: 2em;
+            height: 2em;
+            font-size: 2em;
+            box-shadow: 5px 5px 5px rgb(178, 206, 238);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>        
+        // Programación orientada a objetos
+        const c1 = new Calc(); // Objeto = nueva instancia de clase.
+        let n = c1.sum(1,2);
+        console.log(n);
+
+        // API = Application Programming Interface
+        // APIs
+        // DOM API
+
+        // Programación basada en eventos
+        // Función anónima
+        window.addEventListener('DOMContentLoaded', function (params) {
+            console.log('DOM is ready!');
+
+            // const bSum = document.getElementById('bSum');            
+            // Función flecha (Arrow function)
+            bSum.addEventListener('click', event => {
+                event.preventDefault();
+                console.log('bSum clicked!');
+
+                const v = iValue.valueAsNumber;
+                result = c1.sum(result, v);
+                pResult.innerHTML = result;
+            });
+
+            bSub.addEventListener('click', event => {
+                event.preventDefault();
+                console.log('bSub clicked!');
+
+                const v = iValue.valueAsNumber;
+                result = c1.substract(result, v);
+                pResult.innerHTML = result;
+            });
+
+            bMul.addEventListener('click', event => {
+                event.preventDefault();
+                console.log('bMul clicked!');
+
+                const v = iValue.valueAsNumber;
+                result = c1.multiply(result, v);
+                pResult.innerHTML = result;
+            });
+
+            bDiv.addEventListener('click', event => {
+                event.preventDefault();
+                console.log('bDiv clicked!');
+
+                const v = iValue.valueAsNumber;
+                result = c1.division(result, v);
+                pResult.innerHTML = result;
+            });
+        });
+    </script>
+    <section>
+        <h3>Calc</h3>
+        <hr/>
+        <form>
+            <fieldset>
+                <legend>Value</legend>
+                <input id="iValue" type="number" step="0.1" placeholder="Type number here .." />
+            </fieldset>
+            <fieldset>
+                <legend>Result</legend>
+                <p id="pResult">0</p>
+            </fieldset>            
+            <fieldset>                
+                <div id="operations">
+                    <button id="bSum">+</button>
+                    <button id="bSub">-</button>
+                    <button id="bMul">*</button>
+                    <button id="bDiv">/</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
