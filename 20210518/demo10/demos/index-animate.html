@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #box {
+            height: 4em;
+            background: yellow;
+            opacity: 0;
+            animation-name: fadeIn;
+            animation-duration: 1s; 
+        }
+
+        @keyframes change-color {
+            from {
+                background: red;
+            }
+
+            50% {
+                background: blue;
+            }
+
+            to {
+                background: yellow;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translate(-200px);
+            }
+
+            to {
+                transform: translate(0px);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        DEMO
+    </div>    
+</body>
+</html>

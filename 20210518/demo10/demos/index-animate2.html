@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        @keyframes background-animation {
+            from {
+                background: red;
+                transform: scale(1);
+            }
+            25% {
+                background: blue;
+                transform: rotate(45deg);
+            }
+            to {
+                background: yellow;
+                transform: scale(2);
+            }
+        }
+
+        #box {
+            animation-name: background-animation;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease;
+            animation-direction: alternate;
+        }
+
+        #box:hover {
+            animation-play-state: paused;
+        }
+
+        body {
+            margin: 2em;
+        }
+
+        .window {
+            margin: 2em;
+            padding: 0.5em;
+            width: 90%;
+            background-color: #b6ff00;
+            border: 1px solid #808080;
+            border-radius: 4px;
+            box-shadow: #6b8f11 2px 2px;
+            text-align: center;
+        }
+
+        .window:hover {
+            animation: fadeIn 6s;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translate(-200px);
+            }
+
+            to {
+                transform: translate(0px);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+
+    <div class="window">
+        <img src="http://www.pngmart.com/files/1/Bee-PNG.png" alt="Alternate Text" width="60%" />
+    </div>
+</body>
+</html>

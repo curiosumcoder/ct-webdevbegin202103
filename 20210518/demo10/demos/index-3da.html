@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            padding: 5em;
+        }
+
+        figure {
+            height: 10em;
+            width: 10em;
+            background-color: #ffd800;
+            border-radius: 4px;
+            border: 1px solid #5c3838;
+            box-shadow: #ff6a00 2px 2px;
+        }
+
+        .content {
+            perspective: 1000px;
+        }
+
+        .block {
+            transform-style: preserve-3d;
+        }
+
+        #f1:hover {
+            transform-origin: 0 0;
+            transform: rotateX(60deg) rotateY(45deg) rotateZ(20deg);
+            transition: transform 1s;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS 3D Transforms</h1>
+
+    <section class="content">
+        <article class="block">
+            <figure id="f1">
+                <figcaption><strong>TOP</strong></figcaption>
+            </figure>
+        </article>
+    </section>
+
+    <blockquote>http://www.westciv.com/tools/3Dtransforms/ </blockquote>
+</body>
+</html>

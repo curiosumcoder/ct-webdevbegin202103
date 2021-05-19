@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            padding: 5em;
+        }
+
+        figure {
+            height: 10em;
+            width: 10em;
+            background-color: #ffd800;
+            border-radius: 4px;
+            border: 1px solid #5c3838;
+        }
+
+        .content {
+            perspective: 800px;
+            /*perspective-origin: 0;*/
+        }
+
+        .block {
+            transform-style: preserve-3d;
+        }
+
+        #f1 {
+            cursor: pointer;
+            box-shadow: blue 5px 5px;
+            transition: transform 1s;
+        }
+
+        .threed {
+            /*transform: translateY(100px);*/
+            transform: rotateZ(45deg) rotateY(45deg);
+            /*transform: rotateX(45deg) rotateY(45deg);*/
+            /*transform: rotateZ(45deg);*/
+        }
+    </style>
+</head>
+<body>
+    <section class="content">
+        <article class="block">
+            <figure id="f1">
+                <figcaption><strong>TOP</strong></figcaption>
+            </figure>
+        </article>
+    </section>
+    <script>
+        document.getElementById('f1').addEventListener('click', (el) => {
+            console.log('f1 clicked!');
+            console.log(el.target);
+            el.target.classList.toggle('threed');
+        });
+    </script>
+</body>
+</html>
