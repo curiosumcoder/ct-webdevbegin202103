@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+    <style>
+        @import url(style/bootstrap/bootstrap.css);
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+
+    <script>
+        $(function () {
+            console.log("DOM is ready!");
+            $.getJSON('products', function (data) {
+                console.log(data);
+
+                if (data.length > 0) {
+                    let items = [];
+                    $.each(data, function (key, p) {
+                        items.push(`<tr>
+                            <td>${p.productName}</td>
+                            <td>${p.category.categoryName}</td>
+                            <td>$ ${p.unitPrice}</td></tr>`);
+                    });
+                    $(items.join("")).appendTo("#products");
+                }
+            });
+
+            $('#tproducts').DataTable();
+        });
+    </script>
+</head>
+
+<body>
+    <main class="container">
+        <br/>
+        <table id="tproducts">
+            <thead>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                </tr>
+            </thead>
+            <tbody id="products"></tbody>
+        </table>
+    </main>
+
+</body>
+
+</html>
