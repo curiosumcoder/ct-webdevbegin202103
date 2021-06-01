@@ -1,0 +1,41 @@
+Web Developer Beginner
+Prof. Gilberto Bermúdez G.
+gbermude@outlook.com
+
+Proyecto Final
+
+Objetivo: Crear un catálogo de consulta de productos y carrito de compras
+(parecido a Amazon.com, o similares).
+
+Estructura esperada de la aplicación.
+
+Páginas
+	- Inicio. Valor 1 punto por fase.
+		- En la página de inicio se pueden buscar productos
+			- En la página de inicio se muestra el resultado de búsqueda
+			- Desde la lista de resultados se puede ir al "Detalle del producto"
+		- En la página de inicio se presenta la oferta del día
+		
+	- Detalle del producto. Valor 1 punto por fase.
+		- En la página de detalle se puede agregar al carrito
+		
+	- Detalle del carrito. Valor 1 punto por fase.
+		- En la página de carrito se puede ver el detalle de la compra
+		
+	- Acerca De. Valor 1 punto por fase.
+		- Descripción sobre el sitio
+		
+	- Contacto. Valor 1 punto por fase.
+		- Incluir formulario (hacer validación, simular el envío)
+		- Poder marcar al teléfono
+
+----------------------------------------------------------------------------
+Fase 1: Diseño. Valor 5 puntos.
+Fase 2. Funcionalidad. Valor 5 puntos.	
+
+OPCIONALES
+	- Detalle del producto
+		- Al agregar al carrito se muestra un indicador de proceso
+		- Al agregar al carrito y "finalizar" se muestra un diálogo informativo
+		
+--- ÚLTIMA LÍNEA ---
