@@ -15,6 +15,11 @@ Páginas
 			- En la página de inicio se muestra el resultado de búsqueda
 			- Desde la lista de resultados se puede ir al "Detalle del producto"
 		- En la página de inicio se presenta la oferta del día
+		- En la página de inicio hay un menú para ir las páginas:
+			- Inicio
+			- Detalle de carrito
+			- Acerca
+			- Contacto		
 		
 	- Detalle del producto. Valor 1 punto por fase.
 		- En la página de detalle se puede agregar al carrito
