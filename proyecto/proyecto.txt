@@ -31,13 +31,25 @@ Páginas
 		- Descripción sobre el sitio
 		
 	- Contacto. Valor 1 punto por fase.
-		- Incluir formulario (hacer validación, simular el envío)
+		- Incluir formulario
+			- Hacer validación de los datos requeridos (defina usted las que considere)
+			- Simular el envío colocando un botón "Enviar"
 		- Poder marcar al teléfono
+			- Colocar un botón o enlace en donde se muestre el número de 
+			teléfono y que al hacer clic permita hacer la llamada telefónica.
 
 ----------------------------------------------------------------------------
 Fase 1: Diseño. Valor 5 puntos.
+	Debe aplicar CSS a todas las páginas.
+	
 Fase 2. Funcionalidad. Valor 5 puntos.	
+	Utilice el JavaScript o la biblioteca/framework según lo considere.
 
+----------------------------------------------------------------------------
+Puede aplicar cualesquiera de los conceptos y herramientas estudiados
+en el curso.
+
+----------------------------------------------------------------------------
 OPCIONALES
 	- Detalle del producto
 		- Al agregar al carrito se muestra un indicador de proceso
