@@ -2,8 +2,8 @@
 - git status
 - git add -A
 - git commit -m "Actualización"
----------------------------------------------
 - git push
+---------------------------------------------
 - npx degit sveltejs/template demo13
 - cd demo13
 - npm install
