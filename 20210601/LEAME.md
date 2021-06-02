@@ -2,7 +2,7 @@
 - git status
 - git add -A
 - git commit -m "Actualización"
-<hr/>
+---------------------------------------------
 - git push
 - npx degit sveltejs/template demo13
 - cd demo13
