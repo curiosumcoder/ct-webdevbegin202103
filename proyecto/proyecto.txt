@@ -15,10 +15,12 @@ Páginas
 			- En la página de inicio se muestra el resultado de búsqueda
 			- Desde la lista de resultados se puede ir al "Detalle del producto"
 		- En la página de inicio se presenta la oferta del día
+			- Es un producto aleatorio (o su criterio) de la lista de productos existentes
+			- Desde la oferta del día se puede ir al "Detalle del producto"
 		- En la página de inicio hay un menú para ir las páginas:
 			- Inicio
 			- Detalle de carrito
-			- Acerca
+			- Acerca de ...
 			- Contacto		
 		
 	- Detalle del producto. Valor 1 punto por fase.
@@ -28,18 +30,25 @@ Páginas
 		- En la página de carrito se puede ver el detalle de la compra
 		
 	- Acerca De. Valor 1 punto por fase.
-		- Descripción sobre el sitio
+		- Descripción sobre el sitio.
 		
 	- Contacto. Valor 1 punto por fase.
 		- Incluir formulario
+			- Incluir los datos: Nombre, Apellidos, Correo Electrónico, 
+			Asunto
 			- Hacer validación de los datos requeridos (defina usted las que considere)
 			- Simular el envío colocando un botón "Enviar"
-		- Poder marcar al teléfono
-			- Colocar un botón o enlace en donde se muestre el número de 
+				- Generar un mensaje con: alert("Enviado")
+		- Contáctenos
+			- Enlaces a redes sociales (las que desee)
+			- Correo electrónico
+			- Teléfono
+				- Poder marcar al teléfono
+				- Colocar un botón o enlace en donde se muestre el número de 
 			teléfono y que al hacer clic permita hacer la llamada telefónica.
 
 ----------------------------------------------------------------------------
-Fase 1: Diseño. Valor 5 puntos.
+Fase 1: Diseño (UI/UX). Valor 5 puntos.
 	Debe aplicar CSS a todas las páginas.
 	
 Fase 2. Funcionalidad. Valor 5 puntos.	
