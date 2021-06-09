@@ -46,7 +46,7 @@ Páginas
 				- Poder marcar al teléfono
 				- Colocar un botón o enlace en donde se muestre el número de 
 			teléfono y que al hacer clic permita hacer la llamada telefónica.
-
+			
 ----------------------------------------------------------------------------
 Fase 1: Diseño (UI/UX). Valor 5 puntos.
 	Debe aplicar CSS a todas las páginas.
@@ -54,6 +54,7 @@ Fase 1: Diseño (UI/UX). Valor 5 puntos.
 Fase 2. Funcionalidad. Valor 5 puntos.	
 	Utilice el JavaScript o la biblioteca/framework según lo considere.
 
+Fase 3. Para ser objeto de revisión debe publicar la aplicación en su GitPage
 ----------------------------------------------------------------------------
 Puede aplicar cualesquiera de los conceptos y herramientas estudiados
 en el curso.
