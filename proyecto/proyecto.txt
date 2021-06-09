@@ -4,7 +4,7 @@ gbermude@outlook.com
 
 Proyecto Final
 
-Objetivo: Crear un catálogo de consulta de productos y carrito de compras
+Objetivo: Crear la base del aspecto de un catálogo de consulta de productos y carrito de compras
 (parecido a Amazon.com, o similares).
 
 Estructura esperada de la aplicación.
