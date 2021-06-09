@@ -4,8 +4,8 @@
 - git commit -m "Actualización"
 - git push
 ---------------------------------------------
-- npx degit sveltejs/template demo13
-- cd demo13
+- npx degit sveltejs/template demo14
+- cd demo14
 - npm install
 - npm run dev
 - npm run build
