@@ -9,10 +9,11 @@ de consulta de productos y carrito de compras (piense en Amazon.com, o similares
 generar los archivos .html o .css que correspondan, y por lo tanto solamente HTML o CSS que sea necesario.
 
 Debe aplicar el uso del framework Bootstrap.
+Usar como una base lo definido en el archivo PDF, 
 -------------------------------------------------------------------------------------------------------------
 Estructura esperada de la aplicación.
 
-Páginas
+- Páginas que deben ser parte de la aplicación.
 	- Inicio. Valor 4 puntos.
 		- En la página de inicio se pueden buscar productos por el nombre de productos 
 		(formulario de búsqueda)
