@@ -5,4 +5,4 @@
 </script>
 
 
-<h1>Product: {id}</h1>
+<h1 style="color: red;">Product: {id}</h1>

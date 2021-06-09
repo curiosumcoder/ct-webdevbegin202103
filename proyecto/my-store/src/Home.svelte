@@ -21,9 +21,9 @@
 
 {#if filtered && filtered.length > 0}
   <ul>
-    {#each filtered as p}
+    {#each filtered as product}
       <li>
-        <Link to="product/{p.id}">{p.productName}</Link>
+        <Link to="product/{product.id}">{product.productName}</Link>
       </li>
     {/each}
   </ul>
