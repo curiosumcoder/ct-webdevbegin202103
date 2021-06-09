@@ -4,41 +4,50 @@ gbermude@outlook.com
 
 Proyecto Final
 
-Objetivo: Crear la base del aspecto de un catálogo de consulta de productos y carrito de compras
-(parecido a Amazon.com, o similares).
+Objetivo: Crear un sitio web estático que sirva como base para representar el aspecto de un catálogo 
+de consulta de productos y carrito de compras (piense en Amazon.com, o similares). Solomente se deben
+generar los archivos .html o .css que correspondan, y por lo tanto solamente HTML o CSS que sea necesario.
 
+Debe aplicar el uso del framework Bootstrap.
+-------------------------------------------------------------------------------------------------------------
 Estructura esperada de la aplicación.
 
 Páginas
-	- Inicio. Valor 1 punto por fase.
-		- En la página de inicio se pueden buscar productos
-			- En la página de inicio se muestra el resultado de búsqueda
-			- Desde la lista de resultados se puede ir al "Detalle del producto"
+	- Inicio. Valor 3 puntos.
+		- En la página de inicio se pueden buscar productos por el nombre de productos 
+		(formulario de búsqueda)
+			- En la página de inicio se muestra el resultado de búsqueda (esta es una lista)
+			- Desde la lista de resultados se puede ir al "Detalle del producto", cada detalle
+			debe estar incluído en una etiqueta <a>, para dar la sensación que se puede hacer clic.
 		- En la página de inicio se presenta la oferta del día
-			- Es un producto aleatorio (o su criterio) de la lista de productos existentes
-			- Desde la oferta del día se puede ir al "Detalle del producto"
+			- Es el resumen de datos de un producto.
+			- Desde la oferta del día se puede ir al "Detalle del producto", cada detalle
+			debe estar incluído en una etiqueta <a>, para dar la sensación que se puede hacer clic.
 		- En la página de inicio hay un menú para ir las páginas:
 			- Inicio
 			- Detalle de carrito
 			- Acerca de ...
 			- Contacto		
 		
-	- Detalle del producto. Valor 1 punto por fase.
-		- En la página de detalle se puede agregar al carrito
+	- Detalle del producto. Valor 1 punto.
+		- El menú de la página de inicio también se muestra en esta página.
+		- Aquí se muestra el detalle del producto, y
+		un botón que 
+		- Colocar un botón "Agregar". En la página de detalle se puede agregar al carrito.
 		
-	- Detalle del carrito. Valor 1 punto por fase.
+	- Detalle del carrito. Valor 1 punto.
+		- El menú de la página de inicio también se muestra en esta página.
 		- En la página de carrito se puede ver el detalle de la compra
 		
-	- Acerca De. Valor 1 punto por fase.
+	- Acerca De. Valor 1 punto.
 		- Descripción sobre el sitio.
 		
-	- Contacto. Valor 1 punto por fase.
+	- Contacto. Valor 2 puntos.
 		- Incluir formulario
 			- Incluir los datos: Nombre, Apellidos, Correo Electrónico, 
 			Asunto
 			- Hacer validación de los datos requeridos (defina usted las que considere)
-			- Simular el envío colocando un botón "Enviar"
-				- Generar un mensaje con: alert("Enviado")
+			- Colocar un botón "Enviar".
 		- Contáctenos
 			- Enlaces a redes sociales (las que desee)
 			- Correo electrónico
@@ -47,22 +56,11 @@ Páginas
 				- Colocar un botón o enlace en donde se muestre el número de 
 			teléfono y que al hacer clic permita hacer la llamada telefónica.
 			
-----------------------------------------------------------------------------
-Fase 1: Diseño (UI/UX). Valor 5 puntos.
-	Debe aplicar CSS a todas las páginas.
-	
-Fase 2. Funcionalidad. Valor 5 puntos.	
-	Utilice el JavaScript o la biblioteca/framework según lo considere.
+			<li itemscope="" itemtype="http://schema.org/LocalBusiness">
+				<span itemprop="telephone"><a href="tel:+50625370000">Teléfono</a></span>
+				<span itemprop="name" style="visibility: hidden;">Corporation</span>
+			</li>			
+			
+- Publicar la aplicación en su GitPage. Valor 2 puntos.
 
-Fase 3. Para ser objeto de revisión debe publicar la aplicación en su GitPage
-----------------------------------------------------------------------------
-Puede aplicar cualesquiera de los conceptos y herramientas estudiados
-en el curso.
-
-----------------------------------------------------------------------------
-OPCIONALES
-	- Detalle del producto
-		- Al agregar al carrito se muestra un indicador de proceso
-		- Al agregar al carrito y "finalizar" se muestra un diálogo informativo
-		
 --- ÚLTIMA LÍNEA ---
