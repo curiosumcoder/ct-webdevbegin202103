@@ -13,7 +13,7 @@ Debe aplicar el uso del framework Bootstrap.
 Estructura esperada de la aplicación.
 
 Páginas
-	- Inicio. Valor 3 puntos.
+	- Inicio. Valor 4 puntos.
 		- En la página de inicio se pueden buscar productos por el nombre de productos 
 		(formulario de búsqueda)
 			- En la página de inicio se muestra el resultado de búsqueda (esta es una lista)
@@ -61,6 +61,6 @@ Páginas
 				<span itemprop="name" style="visibility: hidden;">Corporation</span>
 			</li>			
 			
-- Publicar la aplicación en su GitPage. Valor 2 puntos.
+- Publicar la aplicación en su GitPage. Valor 1 puntos.
 
 --- ÚLTIMA LÍNEA ---
