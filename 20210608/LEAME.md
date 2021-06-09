@@ -1,0 +1,11 @@
+- git clone https://github.com/GITHUBUSERNAME/GITHUBUSERNAME.github.io
+- git status
+- git add -A
+- git commit -m "Actualización"
+- git push
+---------------------------------------------
+- npx degit sveltejs/template demo13
+- cd demo13
+- npm install
+- npm run dev
+- npm run build
