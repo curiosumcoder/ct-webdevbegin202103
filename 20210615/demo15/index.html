@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script nomodule>
+        window.addEventListener('DOMContentLoaded', function (event) {
+            console.log('DOM is ready via no module support!');
+        });
+    </script>
+
+    <script type="module">
+        import { App } from './app.js';
+
+        window.addEventListener('DOMContentLoaded', function (event) {
+            console.log('DOM is ready via module support!');
+
+            const app = new App();
+            app.main();
+        });
+    </script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <style>
+        body {
+            background-color: lightgreen;
+        }
+
+        @media screen and (min-width: 576px) {
+
+            /* For landscape phones and up.*/
+            body {
+                background-color: lightgray;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+
+            /* For tablets and up.*/
+            body {
+                background-color: lightyellow;
+            }
+        }
+
+        @media screen and (min-width: 992px) {
+
+            /*for laptops and desktops*/
+            body {
+                background-color: lightpink;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="mdc-top-app-bar mdc-top-app-bar--short">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+                <span class="mdc-top-app-bar__title">Material</span>
+            </section>
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+                <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
+                    aria-label="Bookmark this page">bookmark</button>
+            </section>
+        </div>
+    </header>
+
+    <main class="mdc-top-app-bar--fixed-adjust">
+        <ul class="mdc-list">
+            <li class="mdc-list-item" tabindex="0">
+                <span class="mdc-list-item__ripple"></span>
+                <span class="mdc-list-item__text"><a
+                        href="https://material.io/resources/tutorials#web">Material</a></span>
+            </li>
+            <li class="mdc-list-item">
+                <span class="mdc-list-item__ripple"></span>
+                <span class="mdc-list-item__text"><a
+                        href="https://developer.mozilla.org/en-US/docs/Web/API/Touch_events/Using_Touch_Events">Touch
+                        Events</a></span>
+            </li>
+            <li class="mdc-list-item">
+                <span class="mdc-list-item__ripple"></span>
+                <span class="mdc-list-item__text"><a
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag">Viewport</a></span>
+            </li>
+            <li class="mdc-list-item">
+                <span class="mdc-list-item__ripple"></span>
+                <span class="mdc-list-item__text"><a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media">Media Query</a></span>
+            </li>
+        </ul>
+    </main>
+
+</body>
+
+</html>
