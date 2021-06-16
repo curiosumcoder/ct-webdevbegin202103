@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <script nomodule>
         window.addEventListener('DOMContentLoaded', function (event) {
             console.log('DOM is ready via no module support!');
         });
     </script>
 
+    <!-- <script src="app.js"></script> -->
     <script type="module">
-        import { App } from './app.js';
+        import { App, helloWorld } from './app.js';
 
         window.addEventListener('DOMContentLoaded', function (event) {
             console.log('DOM is ready via module support!');
@@ -21,6 +23,8 @@
             const app = new App();
             app.main();
         });
+
+        //helloWorld();
     </script>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -34,6 +38,7 @@
             background-color: lightgreen;
         }
 
+        /* Media Queries */
         @media screen and (min-width: 576px) {
 
             /* For landscape phones and up.*/
@@ -99,6 +104,13 @@
                         href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media">Media Query</a></span>
             </li>
         </ul>
+        <div class="mdc-card">
+            <hgroup>
+                <h5>HTML</h5>
+                <h5>CSS</h5>
+                <h5>JavaScript</h5>
+            </hgroup>
+        </div>
     </main>
 
 </body>

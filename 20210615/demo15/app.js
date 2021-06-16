@@ -1,3 +1,5 @@
+const module_name = "appModule";
+
 export class App {
     main(){
         console.log('App is executing ...');
@@ -13,4 +15,8 @@ export class App {
         // Immediately Invoked Function Expression
         (function () { console.log('Function called as IIFE!'); })();
     }    
+}
+
+export function helloWorld() {
+    console.log('Hello World!');
 }
